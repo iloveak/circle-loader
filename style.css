@@ -1,0 +1,55 @@
+body{
+			padding: 0;
+			margin: 0;
+		}
+		.container{
+			width: 100%;
+			height: 100%; 
+			position: absolute;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+	.c1{
+			background-color:hotpink;
+		}
+
+
+		.l1{
+			height:80px;
+			width: 80px;
+			border-radius: 50%;
+			border:10px solid transparent;
+			border-top:10px solid white;
+			border-bottom:10px solid white;
+			position: relative;
+			animation: spin1 2s infinite;
+            
+			animation: spin1 2s infinite; 
+		}
+		.l2{
+			height:50px;
+			width: 50px; 
+			border-radius: 50%;
+			border:10px solid transparent;
+			border-left:10px solid white;
+			border-right:10px solid white; 
+			position: relative;
+			bottom:85px;
+			left:15px; 
+			animation: spin 2s infinite;
+			animation: spin 2s infinite;
+		}
+		@keyframes spin1{
+			50%{
+				transform: rotate(360deg);
+			}
+		}
+		
+
+		@keyframes spin{
+			50%{
+				transform: rotate(-360deg);
+			}
+		}
